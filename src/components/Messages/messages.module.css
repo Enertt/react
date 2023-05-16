@@ -1,0 +1,41 @@
+.dialogsBlock{
+ 
+
+}
+
+.dialogs{
+    width: 28%;
+    height: 88vh;
+    float: left;
+    overflow-y: scroll;
+    background-color: #FBFAFB;
+    color: rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+.messages{
+    position: relative;
+    float: right;
+    width: 72%;
+    height: 88vh;
+    background-color: #FBFAFB;
+}
+
+.textArea{
+    position: absolute;
+    display: flex;
+    width: 57%;
+    height: 12%;
+    right: 0.3%;
+    bottom: 10%;
+}
+.textArea textArea{
+    position: relative;
+    width: 88%;
+    height: 92%;
+}
+.textArea button{
+    position: relative;
+    width: 12%;
+    height: 100%;
+}

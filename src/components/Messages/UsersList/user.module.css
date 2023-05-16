@@ -1,0 +1,22 @@
+.dialogsItem {
+  height: 10vh;
+  margin: 10px;
+  border-bottom: 1px solid rgb(180, 180, 180);
+  font-weight: 500;
+}
+.item{
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+}
+
+.dialogsItem a:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.dialogsItem a {
+  text-decoration: none;
+}
+
+a.active {
+  color: rgba(0, 0, 0, 1);
+}

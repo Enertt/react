@@ -1,0 +1,34 @@
+.main_img {
+    width: 100%;
+    height: 25vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* .main_user_img {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 10px;
+} */
+
+.main_img img {
+    width: 100%;
+    margin: 10px;
+}
+
+/* .main_user_img img {
+    min-height: 100%;
+} */
+
+.userItems{
+    width: 100%;
+}
+
+.main_user_description {}
+
