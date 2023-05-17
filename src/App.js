@@ -18,9 +18,8 @@ const App = (props) => {
         <Route path={`/messages/dialogs/${arrElement.id}`} element={<MessagesContainer appState={state} dispatch={state.dispatch} />} />
       )
     });
-
+// last mark
   return (
-    // <BrowserRouter>
       <div className="app-wrapper">
         <Header className='header' />
         <div className='nav-and-mainBlock'>
@@ -41,7 +40,6 @@ const App = (props) => {
           </div>
         </div>
       </div>
-    // </BrowserRouter>
   );
 }
 

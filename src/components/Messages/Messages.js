@@ -4,7 +4,7 @@ import User from './UsersList/User.js';
 import UserDialog from './UsersList/UsersDialogs/UserDialog.js';
 
 const Messages = (props) => {
-  
+  //example
 
   let sendNewMessage = React.createRef();
 
