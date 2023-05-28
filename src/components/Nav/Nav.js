@@ -6,7 +6,7 @@ const Nav = () => {
     return (
         <nav className={navStyle.nav}>
             <div className={navStyle.item}>
-                <NavLink to='/profile' className = { navData => navData.isActive ? navStyle.active : navStyle.item }><span>Profile</span></NavLink>
+                <NavLink to='/profile/userProfile/2' className = { navData => navData.isActive ? navStyle.active : navStyle.item }><span>Profile</span></NavLink>
             </div>
 
             <div className={navStyle.item}>

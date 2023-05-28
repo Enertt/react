@@ -1,3 +1,97 @@
 .back{
+    position: absolute;
     background-color: #FBFAFB;
+    width: 80%;
+    height: auto;
+}
+
+.usersListItem{
+    display: flex;
+    border: #e3e5fc solid 1px;
+}
+
+.imgAndButton{
+    margin: 30px;
+}
+
+.imgBlock{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 50%;
+}
+
+.imgBlock img{
+    min-height: 100%;
+    user-select: none;
+}
+
+.folButton button{
+    margin-top: 10px;
+    width: 100px;
+    height: 35px;
+    user-select: none;
+}
+
+.allDescription{
+    position: relative;
+    border-left: rgb(202, 202, 202) solid 1px;
+    width: 100%;
+}
+
+.name{
+    margin: 20px;
+    font-size: 120%;
+    color: black;
+}
+
+.status{
+    margin: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+.location span{
+    display: table;
+}
+
+.location{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 15px;
+    font-size: 120%;
+}
+
+.unselected{
+    font-size: 120%;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.selected{
+    font-size: 120%;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+}
+
+.pagesNumbers{
+    display:inline-flex;
+    margin: 15px;
+    font-size: 130%;
+    font-weight: 600;
+    user-select: none;    
+    max-width: 97%;
+    overflow-x: scroll;
+}
+
+.pagesNumbers div{
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.usersNav{
+    text-decoration: none;
 }

@@ -1,15 +1,8 @@
 import React from 'react';
 import Posts from './Posts';
 import { connect } from 'react-redux';
+import { addPostAC } from '../../../../redux/profile_reduser';
 
-
-
-// const PostsContainer = (props) => {
-//     return(
-//     // appState={props.appState} dispatch={props.dispatch}
-//     <Posts postsData={props.appState.postsData} dispatch={props.dispatch}/>
-//     );  
-// };
 
 let mapStateToProps = (state) => ({
         postsData: state.profileReduser.postsData
@@ -17,7 +10,9 @@ let mapStateToProps = (state) => ({
 
 let mapDispatchToProps = (dispatch) => {
     return{
-        addPost: (action) => dispatch(action),
+        addPost: (text) => {
+            dispatch(addPostAC(text))
+        },
     };
 };
 

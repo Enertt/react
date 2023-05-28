@@ -2,7 +2,6 @@ import React from 'react';
 import postStyle from "./post.module.css"
 
 const Post = (props) => {
-    debugger;
     return (
         <div className={postStyle.post}>
             <div className={postStyle.imgAndDescription}>
