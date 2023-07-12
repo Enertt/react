@@ -1,0 +1,95 @@
+.back{
+    position: absolute;
+    width: 80%;
+    height: 88%;
+    background-color: #ffffff;
+    float: right;
+    text-align: center;
+    user-select: none;
+}
+
+.formBlock{
+    position: relative;
+    display: inline-block;
+    width: 40%;
+    height: 60%;
+    margin-top: 25%;
+    transform: translate(0, -50%);
+}
+
+.formBlock h1{
+    margin-bottom: 50px;
+}
+
+.formBlock div{
+    position: relative;
+    margin-bottom: 30px;
+    height: 60px;
+}
+
+.formBlock div input{
+    position: relative;
+    width: 98%;
+    height: 70%;
+    border-radius: 15px;
+    color: black
+}
+
+.checkRememberMe{
+    cursor: default;
+    float: left;
+    display: flex;
+    text-align: center;
+}
+
+.checkRememberMe input{
+    display: block;
+    float: left;
+    margin-right: 10px;
+    transform: scale(0.5);
+    cursor: pointer;
+    margin-top: 7px;
+}
+
+.buttonSingIn{
+    width: 40%;
+    float: right;
+}
+
+.buttonSingIn button{
+    width: 100%;
+    height: 80%;
+    float: right;
+    border-radius: 15px;
+    font-size: 130%;
+    cursor: pointer;
+    margin-top: 7px;
+    background-color: #FFDE80;
+}
+
+.labels{
+    float: left;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    user-select: none;
+}
+
+button:disabled {
+    opacity: 0.35;
+}
+
+.inputs{
+    
+}
+
+.error_inputs{
+    border: 1px solid red;
+}
+
+.spans{
+    color: rgba(255, 0, 0, 0.5);
+}
+
+.error_spans{
+    color: rgba(255, 0, 0, 1);
+}

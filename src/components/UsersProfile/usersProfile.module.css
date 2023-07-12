@@ -1,6 +1,6 @@
 .mainBlock{
     display: block;
-    background-color: #FBFAFB;
+    background-color: #ffffff;
 }
 
 .main_img {
@@ -10,11 +10,20 @@
     justify-content: center;
     align-items: center;
     display: flex;
+    border-radius: 2px 0 0 0 ;
 }
 
 .main_img img {
     width: 100%;
     margin: 10px;
+}
+
+.nameSpanBack{
+    position: absolute;
+    font-size: 50px;
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 0 0 3px black;
 }
 
 .userItems{
@@ -49,6 +58,13 @@
     margin-bottom: 10px;
 
 }
+.startChattingButton{
+    cursor: pointer;
+    margin: 30px;
+    font-size: 130%;
+    font-weight: 500;
+    border: black solid 1px;
+}
 
 .my_posts{
     margin: 30px;
@@ -58,6 +74,31 @@
 
 .new_post{
     margin: 30px;
+    margin-bottom: 3px;
+}
+
+.new_post input{
+    width: 30%;
+    height: 30px;
+}
+
+.new_post button{
+    width: 8%;
+    height: 36px;
+    background-color: #FFDE80;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.new_post_span{
+    margin-left: 30px;
+    color: rgba(255, 0, 0, 0);
+}
+
+.new_post_span_active{
+    margin-left: 30px;
+    color: rgba(255, 0, 0, 1);
 }
 
 .name_jobStatus{

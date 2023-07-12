@@ -1,7 +1,6 @@
 import { usersAPI } from "../api/api";
 
 // Actions
-const FOLLOW = 'FOLLOW';
 const UNFOLLOW = 'UNFOLLOW';
 const SET_USERS = 'SET_USERS';
 const SET_CURRENT_PAGE = 'SET-CURRENT-PAGE';
@@ -11,30 +10,16 @@ const TOGGLE_IS_FOLLOWING_IN_PROGRESS = 'TOGGLE-IS-FOLLOWING-IN-PROGRESS';
 
 let initialState = {
     users: [],
-    pageSize: 5,
+    pageSize: 10,
     totalUsersCount: 0,
     currentPage: 1,
     isFetching: true,
     followingInProgress: false
 };
 
-const usersReduser = (state = initialState, action) => {
+const friendsReduser = (state = initialState, action) => {
 
     switch (action.type) {
-        case FOLLOW:
-
-
-            return {
-                ...state,
-                users: state.users.map((element) => {
-                    if (element.id === action.userId) {
-                        return { ...element, followed: true, }
-                    } else {
-                        return element;
-                    }
-                })
-            };
-
         case UNFOLLOW:
             return {
                 ...state,
@@ -78,7 +63,6 @@ const usersReduser = (state = initialState, action) => {
 
 
 // Action Creators
-export const followAC = (userId) => ({ type: FOLLOW, userId });
 export const unfollowAC = (userId) => ({ type: UNFOLLOW, userId });
 export const setUsersAC = (users) => ({ type: SET_USERS, users });
 export const setCurrentPageAC = (currentPage) => ({ type: SET_CURRENT_PAGE, currentPage });
@@ -116,34 +100,4 @@ export const unfollowThunkCreator = (userId) => {
     }
 }
 
-export const followThunkCreator = (userId) => {
-
-    return (dispatch) => {
-
-        dispatch(toggleFollowingInProgressAC(true));
-
-        usersAPI.postFollowingState(userId).then(data => {
-            if (data.resultCode === 0) {
-                dispatch(followAC(userId));
-            };
-            dispatch(toggleFollowingInProgressAC(false));
-        });
-    }
-}
-
-export const findUsersThunkCreator = (nameString, currentPage, pageSize) => {
-
-    return (dispatch) => {
-
-        dispatch(toggleIsFetchingAC(true));
-
-        usersAPI.findUsers(nameString, currentPage, pageSize).then(data => {
-            dispatch(toggleIsFetchingAC(false));
-            dispatch(setUsersAC(data.items));
-            dispatch(setTotalUsersCountAC(data.totalCount));
-            dispatch(setCurrentPageAC(currentPage));
-        });
-    }
-}
-
-export default usersReduser;
+export default friendsReduser;

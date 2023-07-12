@@ -2,12 +2,13 @@
     margin-top: 1%;
     width: 19%;
     height: 88%;
-    background-color: #FBFAFB;
+    background-color: #ffffff;
     z-index: 2;
     float: left;
     font-size: 150%;
     font-weight: 700;
-    
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgb(153, 153, 153);
 }
 
 .item {
@@ -22,9 +23,15 @@
     top: 50%;
     position: relative; 
 }
-
 .item span:hover{
     color: rgba(0, 0, 0, 1);
+}
+
+.itemDisabled{
+    color: rgba(0, 0, 0, 0.2);
+}
+.itemDisabled:hover{
+    color: rgba(0, 0, 0, 0.2);
 }
 
 .item a{

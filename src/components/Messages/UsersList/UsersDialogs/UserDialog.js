@@ -2,7 +2,8 @@ import React from 'react';
 import userDialogStyle from './userDialog.module.css';
 
 const UserDialog = (props) => {
-  if (props.isMyMessage) {
+  if (props.isMyMessage === true) {
+    debugger
     return (
       <div className={userDialogStyle.messageBlock}>
         <div className={userDialogStyle.myMessage}>
@@ -10,15 +11,17 @@ const UserDialog = (props) => {
         </div>
       </div>
     )
-  };
-
-  return (
-    <div className={userDialogStyle.messageBlock}>
-      <div className={userDialogStyle.personsMessage}>
-        <span>{props.message}</span>
+  }else{
+    return (
+      <div className={userDialogStyle.messageBlock}>
+        <div className={userDialogStyle.personsMessage}>
+          <span>{props.message}</span>
+        </div>
       </div>
-    </div>
-    );
+      );
+  }
+
+  
 }
 
 export default UserDialog;

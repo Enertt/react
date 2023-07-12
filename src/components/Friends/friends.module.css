@@ -1,65 +1,8 @@
 .back{
     position: absolute;
-    background-color: #ffffff;
+    background-color: #FBFAFB;
     width: 80%;
     height: auto;
-}
-
-.allUsers{
-    position: absolute;
-    top: 20px;
-    left: 15px;
-    width: 15%;
-    height: 41px;
-    background-color: #FFDE80;
-    font-size: 18px;
-    font-weight: 600;
-    cursor: pointer;
-    border-radius: 3px;
-}
-
-.new_post_span{
-    position: absolute;
-    right: 25%;
-    bottom: 28%;
-    margin-left: 30px;
-    color: rgba(255, 0, 0, 0);
-}
-
-.new_post_span_active{
-    position: absolute;
-    right: 25%;
-    bottom: 28%;
-    margin-left: 30px;
-    color: rgba(255, 0, 0, 1);
-}
-
-.textArea{
-    margin-top: 20px;
-    margin-left: 50%;
-    transform: translate(-50%, 0);
-    display: flex;
-    width: 57%;
-    height: 41px;
-    right: 0.3%;
-    bottom: 10%;
-    font-size: 30px;
-
-}
-.textArea input{
-    position: relative;
-    width: 88%;
-    height: 35px;
-}
-.textArea button{
-    position: relative;
-    width: 140px;
-    height: 41px;
-    background-color: #FFDE80;
-    font-size: 18px;
-    font-weight: 600;
-    border-radius: 3px;
-    cursor: pointer;
 }
 
 .usersListItem{
@@ -91,11 +34,6 @@
     width: 100px;
     height: 35px;
     user-select: none;
-    background-color: #FFDE80;
-    border-radius: 3px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
 }
 
 .allDescription{

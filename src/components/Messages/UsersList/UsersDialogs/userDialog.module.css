@@ -1,11 +1,15 @@
 .messageBlock{
-    
+    z-index: 1;
 }
 
 .myMessage{
     text-align: right;
+    margin-right: 20px;
+    margin-top: 10px;
+    /* border: black solid 1px; */
 }
 
 .personsMessage{
-    
+    margin-left: 20px;
+    margin-top: 10px;
 }

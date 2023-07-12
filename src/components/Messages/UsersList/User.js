@@ -3,11 +3,15 @@ import userStyle from './user.module.css';
 import { NavLink } from 'react-router-dom';
 
 const User = (props) => {
+  debugger
   return (
     <div>
       <div className={userStyle.dialogsItem}>
-          <NavLink to={props.linkTo} className = { userData => userData.isActive ? userStyle.active : userStyle.item }>{props.name} {props.lastName}</NavLink>
-        </div>
+        
+        <img src={props.photo}></img>
+        {props.userName}
+        
+      </div>
     </div>
   );
 }

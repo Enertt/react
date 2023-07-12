@@ -1,0 +1,7 @@
+.preloader{
+    position: absolute;
+    transform: translate(-50%, -70%);
+    margin-left: 50%;
+    margin-top: 50vh;
+    z-index: 1000;
+}

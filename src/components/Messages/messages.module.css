@@ -8,34 +8,69 @@
     height: 88vh;
     float: left;
     overflow-y: scroll;
-    background-color: #FBFAFB;
+    background-color: #ffffff;
     color: rgba(0, 0, 0, 0.3);
     text-decoration: none;
+
 }
 
 .messages{
     position: relative;
+    overflow-y: scroll;
     float: right;
     width: 72%;
-    height: 88vh;
-    background-color: #FBFAFB;
+    height: 80vh;
+    background-color: #ffffff;
+
+}
+
+.userDialogBlock{
+
+    
 }
 
 .textArea{
     position: absolute;
     display: flex;
-    width: 57%;
-    height: 12%;
+    width: 57.3%;
+    height: 8%;
     right: 0.3%;
-    bottom: 10%;
+    bottom: 0%;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgb(153, 153, 153);
 }
-.textArea textArea{
+.textArea input{
     position: relative;
     width: 88%;
-    height: 92%;
+    height: 90%;
 }
 .textArea button{
     position: relative;
     width: 12%;
     height: 100%;
+    background-color: #FFDE80;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.new_post_span{
+    position: absolute;
+    right: 25%;
+    bottom: 9%;
+    margin-left: 30px;
+    color: rgba(255, 0, 0, 0);
+}
+
+.new_post_span_active{
+    position: absolute;
+    right: 25%;
+    bottom: 9%;
+    margin-left: 30px;
+    color: rgba(255, 0, 0, 1);
+}
+.userItem{
+    color: rgba(238, 0, 0, 1);
+}
+.userActive{
+    color: rgba(0, 0, 0, 1);
 }
