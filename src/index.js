@@ -5,7 +5,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import { Provider } from 'react-redux';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 // let state = store.getState();
 // let dispatch = store.dispatch.bind(store);
@@ -15,11 +15,11 @@ import { BrowserRouter } from 'react-router-dom';
     const root = ReactDOM.createRoot(document.getElementById('root'));
     root.render(
       <React.StrictMode>
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <HashRouter basename={process.env.PUBLIC_URL}>
           <Provider store={store}>
             <App /*appState={state} dispatch={dispatch}*/ />
           </Provider>
-        </BrowserRouter>
+        </HashRouter>
       </React.StrictMode>
     );
 //}
